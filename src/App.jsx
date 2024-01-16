@@ -1,24 +1,17 @@
-import React from "react";
 import StickyBottomNavigation from "./components/StickyBottomNavigation";
+import CompanyLogo from "../src/assets/images/companyLogo.png";
 
 function App() {
   return (
-    <div className="bg-black min-h-screen flex w-full justify-center items-center text-white flex-col">
-      <div className="flex gap-4 flex-col items-center">
+    <div className="bg-gradient-to-b from-cyan-400 via-white to-white min-h-screen flex w-full text-white flex-col px-8">
+      <div className="flex gap-4 flex-col  py-6">
         <a
-          href="https://saipranay.vercel.app/"
-          target="_blank"
-          className=" px-6 py-3 bg-transparent text-white border border-white rounded-full w-max"
+          href="/"
+          className="bg-transparent text-white w-max"
+          rel="noreferrer"
         >
-          Created by Sai Pranay.
+          <img src={CompanyLogo} alt="logo" className=" h-12 " />
         </a>
-        <h1 className="text-center text-6xl tracking-tighter font-bold">
-          Awwwards <br /> Sticky Bottom Navigation
-        </h1>
-        <p className="text-[#666] ">
-          Explore your website with this beautiful sticky bottom navigation
-          inspired by Awwwards.com.
-        </p>
       </div>
 
       <StickyBottomNavigation />
