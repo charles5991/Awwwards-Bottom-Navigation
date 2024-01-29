@@ -36,48 +36,48 @@ function StickyBottomNavigation() {
   };
 
   return (
-    <nav className=" fixed bottom-5 max-w-full gap-x-2 gap-y-2 rounded-[var(--border-radius--menu-wrapper)] bg-[rgba(26,27,30,0.4)] border flex-col flex  p-[9px] max-sm:p-[5px] border-solid border-[#222325] transition-custom ">
+    <nav className="fixed bottom-5 max-w-full gap-x-2 gap-y-2 rounded-[var(--border-radius--menu-wrapper)] bg-[rgba(26,27,30,0.4)] border flex-col flex p-[9px] max-sm:p-[5px] border-solid border-[#222325] transition-custom justify-center items-center">
       {learnVisible && (
         <div className="max-w-full gap-x-6 gap-y-6 bg-[#1a1b1e] flex-col flex overflow-hidden p-0 rounded-[23px] animateNav transition-custom">
-          <div className="text-[#313235] text-[10px] leading-[120%] mt-6 mx-6 pb-[13px] border-b-[#222325] border-b border-solid">
-            LEARN
+          <div className="text-[#ffffff] text-[13px] leading-[120%] mt-6 mx-6 pb-[13px] border-b-[#222325] border-b border-solid">
+            所有服务
           </div>
-          <div className="gap-x-4 gap-y-4 grid-rows-[auto_auto] grid-cols-[1fr_1fr_1fr] auto-cols-[1fr] justify-items-center grid mb-6 mx-6">
+          <div className="gap-x-4 gap-y-4 grid-rows-[auto_auto] grid-cols-[1fr_1fr_1fr] auto-cols-[1fr] justify-items-center grid mb-6 mx-6 px-16">
             <a
               href="#"
               className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
             >
-              Navigation Link
+              学费
             </a>
             <a
               href="#"
               className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
             >
-              Navigation Link
+              换汇
             </a>
             <a
               href="#"
               className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
             >
-              Navigation Link
+              房租
             </a>
             <a
               href="#"
               className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
             >
-              Navigation Link
+              电话卡
             </a>
             <a
               href="#"
               className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
             >
-              Navigation Link
+              水电费
             </a>
             <a
               href="#"
               className="text-white text-center text-sm max-sm:text-xs font-normal leading-[142.857%] max-sm:leading-none no-underline hover:underline transition-all duration-[0.2s] ease-[ease-in-out]"
             >
-              Navigation Link
+              排污费
             </a>
           </div>
         </div>
@@ -88,15 +88,15 @@ function StickyBottomNavigation() {
         </a>
 
         <a href="/about" className="menuLink">
+          工作咨询
+        </a>
+
+        <a href="/about" className="menuLink">
           圈子
         </a>
 
-        <a href="/works" className="menuLink">
-          工作
-        </a>
-
         <button className="menuLink" onClick={handleClick}>
-          查询 <Arrow />
+          服务 <Arrow />
         </button>
 
         <a
